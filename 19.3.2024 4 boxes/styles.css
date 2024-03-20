@@ -1,0 +1,39 @@
+hr{
+    width: 500px;
+    height: 4px;
+    background-color: rgb(107, 107, 107);
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 200px;
+
+}
+
+.gallery-item {
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 16px;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.gallery-item:hover {
+    width: 650px;
+    background-color: antiquewhite;
+
+}
+
+.gallery-item-label{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.label-container{
+padding: 20px;
+}
