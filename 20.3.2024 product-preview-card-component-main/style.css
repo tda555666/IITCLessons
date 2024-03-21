@@ -1,17 +1,15 @@
 html{
     background-color: hsl(30, 38%, 92%);
 }
-p{
+p {
     font-size: 16px;
     word-spacing: 4px;
     line-height: 26px;
 }
 .card_container{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+display:flex;
+align-items: center;
+height: 100vh;    
 }
 .card{
     display: grid;
@@ -21,7 +19,7 @@ p{
     width: 750px;
     height: 550px;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 20px;  
 }
 .card_image{
     grid-column-end: 1; 
@@ -31,15 +29,14 @@ p{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.card_text{
+.card_text{  
     margin-top: 10px;
     margin-left: 10px;
     width: 138%;
     font-family:Montserrat;
-    font-size: 20px;
+    font-size: 20px; 
 }
 .price{
-    display: inline-block;
     margin-top: 30px;
     display: inline;
     font-size: 50px;
@@ -69,19 +66,13 @@ p{
     font: optional;
     letter-spacing: .25cm;
 }
-.label_main{
-    font-size: 33px;
-    font-family: Montserrat;
-    cursor: pointer;
-    justify-content: center;
-}
 .button{
     display: flex;
     height: 50px;
     width: 125%;
     justify-content: center;
     margin: auto; 
-    margin-top: 30px;
+    margin-top: 30px;    
 }
 #Add_to_cart{
     height: 50px;
@@ -98,3 +89,36 @@ p{
 #Add_to_cart:hover{
     background-color: hsl(157, 36%, 27%);
 }
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 400px;
+        height: 700px;
+        border-radius: 20px;     
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;  
+    }
+    .card_text{
+       width: 100%;
+    }
+    .button{
+        width:100%
+    }
+    .card_image{
+        grid-column-end: 2; 
+        background-image: url("/20.3.2024 product-preview-card-component-main/images/image-product-mobile.jpg");
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #Perfume_img{
+        display:none; 
+    }
+    .button{
+        display: relative;
+        height: 80px;
+        width: 100%;
+        margin-top: 10px; 
+        margin-left: -10px;   
+    } 
+  }
