@@ -1,0 +1,184 @@
+html {
+    background-color: hsl(0, 0%, 0%);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 0 15px;
+    color: #ffffff;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.video-container {
+    
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    z-index: 2;
+    animation: moveDown 4s forwards;
+    opacity: 0;
+}
+@keyframes moveDown {
+    0% {
+        top: 40%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+.cars-for-sale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.car {
+    color: #ffffff;
+    width: calc(25% - 40px);
+    margin: 20px;
+    text-align: center;
+}
+.car img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.car p {
+    margin-top: 10px;
+}
+.car button {
+    background-color: #767676;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.available-soon {
+    text-align: center;
+    margin-top: 20px;
+}
+/* bmw-m2-competition.html page */
+.car-details {
+    text-align: center;
+    color: #c1c1c1;
+}
+.car-details .car-bmw-m2 {
+    display: flex;
+    justify-content: center;
+}
+.car-details img {
+    max-width: 40%;
+    height: auto;
+}
+.text-parts {
+    text-align: center;
+    margin-top: 70px;
+}
+.text-parts h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c1c1c1;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+.text-parts h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #c1c1c1;
+    transition: width 0.3s ease;
+}
+.text-parts h3:hover::after {
+    width: 100%;
+}
+.text-parts p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #c1c1c1;
+}
+.button-container {
+    margin-top: 20px;
+}
+.button-container .contact-dealer-button {
+    padding: 15px 30px;
+    background-color: #535353;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-container .contact-dealer-button:hover {
+    background-color: #FF6347;
+}
+.car-details .car-bmw-m2 img {
+    max-width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.car-details .car-bmw-m2 img:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+.social-media a {
+    margin: 0 10px;
+}
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
