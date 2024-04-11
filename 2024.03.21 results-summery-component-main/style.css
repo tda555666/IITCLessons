@@ -1,0 +1,84 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    width: 850px;
+    height: 600px;
+    box-shadow: -15px 6px 45px rgba(67, 133, 255, 0.37);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.your-results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    width: 850px;
+    height: 600px;
+    box-shadow: -15px 6px 45px rgba(67, 133, 255, 0.37);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+summary{
+    display: flex ;
+    justify-content: center;
+    width: 50%;
+    height:100%;
+    border-radius: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+}
+.title{
+    display:flex;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.result{
+    display:flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-top:-40px;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) 100%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.result>h2{
+    position: absolute;
+    font-size: 90px;
+    margin-top: 50px;
+}
+.result>h3{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 110px;
+}
+.summary-title{
+    width: 80%;
+    margin-top: 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.summary-title>h1{
+    text-align: left;
+}
