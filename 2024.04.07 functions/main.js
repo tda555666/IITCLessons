@@ -263,10 +263,8 @@ const data = [
 
 // misson 3 :
 
-// const func = (x) => {
-//   x.shift();
-//   console.log(x);
+const func = (x) => {
+  x.shift();
+  console.log(x);
 
 // };
-
-// console.log(func(data));
